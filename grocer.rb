@@ -11,16 +11,17 @@ end
 def consolidate_cart(cart)
   new_arr = []
   index = 0
-  count_hash = {}
   while index < cart.length do
-    item_name = cart[index][:item]
+    name = cart[index][:item]
     if count_hash[item_name]
       count_hash[item_name] += 1
     else
       count_hash[item_name] = 1
-  end
+    end
   index += 1
-end
+  end
+  index = 0
+    while index < cart.len
 
 def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
