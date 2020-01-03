@@ -1,15 +1,19 @@
 def find_item_by_name_in_collection(name, collection)
   index = 0
   while index < collection.length
-  if name == collection[index][:item]
-    return collection[index]
-  end
-  index += 1
+    if name == collection[index][:item]
+      return collection[index]
+    end
+    index += 1
   end
 end
 
 def consolidate_cart(cart)
+  new_arr = []
+  index = 0
+  while
 
+  end
 end
 
 
