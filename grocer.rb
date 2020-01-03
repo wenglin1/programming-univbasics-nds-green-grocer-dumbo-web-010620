@@ -57,7 +57,13 @@ def apply_coupons(cart, coupons)
 end
 
 def apply_clearance(cart)
-  new_
+  index = 0
+  while index < cart.length
+    if cart[index][:clearance]
+      cart[index][:price] = cart[index][:price] - (cart[index][:price] * .20).round(2)
+    else
+    index += 1
+  end
 end
 
 def checkout(cart, coupons)
