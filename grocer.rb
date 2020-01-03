@@ -12,7 +12,7 @@ def consolidate_cart(cart)
   new_arr = []
   index = 0
   count_hash = {}
-  while index > cart.length do
+  while index < cart.length do
     item_name = cart[index][:item]
     if count_hash[item_name]
       count_hash[item_name] += 1
