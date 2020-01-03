@@ -11,8 +11,8 @@ end
 def consolidate_cart(cart)
   new_arr = []
   index = 0
-  while 
-    
+  while
+
   end
 end
 
